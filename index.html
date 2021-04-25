@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>life</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: cornsilk;
+        font-family: 'Press Start 2P', Consolas;
+    }
+
+    canvas {
+        box-shadow: black 20px 10px 50px;
+        margin-top: 20px;
+    }
+
+    .button {
+        width: 200px;
+        height: 30px;
+        border-radius: 7px;
+        color: cornsilk;
+        background-color: black;
+        outline: none;
+        border: none;
+        box-shadow: black 20px 10px 50px;
+        font-family: inherit;
+
+    }
+
+    .button:hover {
+        transition: 1s ease;
+        background-color: pink;
+        color: black;
+        border: 1px solid black;
+    }
+
+</style>
+</head>
+
+<body>
+    <h1>Psychedelic Life</h1>
+    
+    <canvas id="life" width="400" height="400"></canvas>
+    <p>Loop count: <span id="count">0</span></p>
+    <div class="btn-wrapper">
+        <button class = "button" id="start">Start</button>
+        <button class = "button" id="stop">Stop</button>    
+    </div>
+    
+  <script src="script.js"></script>
+</body>
+
+</html>
